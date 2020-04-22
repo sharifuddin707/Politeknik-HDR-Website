@@ -5,8 +5,8 @@ body{
   padding: 0 auto;
   margin: 0 auto;
   background-color: #dcdcdc;
+  min-width: 750px;
 }
-
 /*Global*/
 .container{
   width: 80%;
@@ -33,11 +33,30 @@ header{
   min-height: 70px;
   border-bottom: #0066cc 10px solid;
 }
-header a{
-  color: #ffffff;
-  text-decoration: none;
-  //text-transform: uppercase;
-  font-size: 13px;
+header .container{
+  position: relative;
+  min-height: 245px;
+}
+header #topRight{
+  position: absolute;
+  margin: 5px auto;
+  margin-top: 100px;
+  right: 0;
+  bottom: 0;
+}
+header form{
+  padding: 0 0 10px 39px;
+}
+header #logo{
+  float: left;
+  background-color: #0066cc;
+  border-radius: 25px;
+  text-align: center;
+  display: inline;
+  padding-bottom: 15px;
+}
+header #logo img{
+  padding-top: 20px;
 }
 header li{
   float: left;
@@ -46,29 +65,28 @@ header li{
   background-color: #99ccff;
   border: 3px solid #0066cc;
   border-radius: 5px;
-  margin-left: 10px;
+  margin: 5px 5px 5px 0;
 }
-header #logo{
-  float: left;
-  background: #0066cc;
-  border-radius: 5px;
-  text-align: center;
-  display: inline;
-}
-header #logo img{
-  padding-top: 10px;
-}
-header nav{
-  float: right;
-  padding-top: 30px;
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 5px;
 }
 header .current a{
   color: #0066cc;
   font-weight: bold;
 }
 header a:hover{
-  color: #cccccc;
+  color: royalblue;
   font-weight: bold;
+}
+header li:hover{
+  padding: 0 20px 0 20px;
+  background-color: powderblue;
+  border: 3px solid royalblue;
+  border-radius: 5px;
+  margin: 5px 5px 5px 0;
 }
 
 /*Showcase*/
@@ -84,23 +102,24 @@ header a:hover{
 #showcase p{
   font-size: 20px;
 }
-#search{
-  padding: 15px;
+#email{
   color: #ffffff;
   background: #1e90ff;
   border-top: #0066cc 5px solid;
   border-bottom: #0066cc 5px solid;
+  margin: auto;
 }
-#search h1{
+#email h1{
   float: left;
+  font-size: 20px;
 }
-#search form{
+#email form{
   float: right;
-  margin-top: 25px;
+  margin: 17px 0 0 0;
 }
-#search input[type="search"]{
+#email input[type="email"]{
   padding: 4px;
-  height: 25px;
+  height: 20px;
   width: 230px;
 }
 
@@ -156,17 +175,14 @@ header a:hover{
   color: #ffffff;
   text-decoration: none;
   font-size: 13px;
-  padding-right: 20px;
 }
 #school a:hover{
   color: #cccccc;
-  font-weight: bold;
 }
 #hotline{
   float: right;
   margin: 0 auto;
   margin-right: 10%;
-  padding-right: 10%;
   text-align: center;
   display: inline;
 }
@@ -193,4 +209,23 @@ header a:hover{
 #truefooter a:hover{
   color: #cccccc;
   font-weight: bold;
+}
+#buttonUp{
+  position: fixed;
+  background-color: #99ccff;
+  padding: 10px;
+  border: 3px solid #0066cc;
+  border-radius: 10px;
+  list-style-type: none;
+  bottom: 30px;
+  right: 20px;
+}
+#buttonUp a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: bold;
+}
+#buttonUp a:hover{
+  color: royalblue;
 }

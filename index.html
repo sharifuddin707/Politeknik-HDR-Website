@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewplatform" content="width=device-width">
-    <meta name="description" content="A static responsive website for Politeknik Human Resource Department">
-    <meta name="author" content="Sharifuddin Sablee">
-    <title>Politeknik Human-Resource Department | Welcome</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <style>
-    header {
-      background: url("img/human resource.jpg") no-repeat 0;
-      background-size: 100% auto;
-      background-color: #B0E0E6;
-    }
-    body #showcase{
-      min-height: 600px;
-      background: url("img/poli-building.jpg") no-repeat 0;
-      background-size: 100% 100%;
-    }
-    </style>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewplatform" content="width=device-width">
+  <meta name="description" content="A static responsive website for Politeknik Human Resource Department">
+  <meta name="author" content="Sharifuddin Sablee">
+  <title>Politeknik Human-Resource Department | Welcome</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+  header {
+    background: url("img/human resource.jpg") no-repeat 0 ;
+    background-size: 100% auto;
+    background-color: #B0E0E6;
+    min-height: 245px;
+  }
+  body #showcase{
+    min-height: 600px;
+    background: url("img/poli-building.jpg") no-repeat 0;
+    background-size: 100% 100%;
+  }
+  </style>
+</head>
 
-  <body>
-    <!--Header-->
-    <header>
-      <div class="container">
-        <div id="logo">
+<body>
+  <!--Header-->
+  <header>
+    <div class="container">
+
+      <div id="logo">
         <a href="index.html"><img src="./img/pblogo1.png" height="100px" width="135px" align="left" alt="Politeknik Brunei"></a>
         <h1>Human Resource Department</h1>
-        </div>
+      </div>
+      <div id="topRight">
         <nav>
           <ul>
             <li class="current"><a href="index.html">Home</a></li>
@@ -36,60 +39,66 @@
             <li><a href="contact us.html">Contact Us</a></li>
           </ul>
         </nav>
-      </div>
-    </header>
-
-    <!--showcase-->
-    <section id="showcase">
-      <div class="container">
-        <h1>Who are we? And why we exist?</h1>
-        <p>The Human Resource Department of Politeknik Brunei manage people with the right resources as efficient as possible. The main aim of the Human Resource Department is  to effectively and systematically manage human resource development in facilitating quality education. Politeknik Brunei has a population of 116 officers and staffs, which comprises of 56 administration staffs and 60 lecturers. Politeknik Brunei regards eacg officers and staff as valuable asset towards achieving its vision and mission as well as its five years strategic plans.</p>
-      </div>
-    </section>
-
-    <section id="search">
-      <div class="container">
-        <h1>Looking for something?</h1>
         <form>
-          <input type="search" placeholder="Insert something for me to search">
+          <input type="search" placeholder="Looking for something?">
           <button type="button" class="button_1">Search!</button>
         </form>
       </div>
-    </section>
 
-    <!--Box-->
-    <div class="container">
-      <h1 id="ourstaff">Our Staff</h1>
-      <section id="boxes">
-        <div class="box">
-          <img src="./img/guy1.png"> <!--insert guy1's photo and details-->
-          <h3>Person 1</h3>
-          <p>His/Her position</p>
-        </div>
-
-        <div class="box">
-          <img src="./img/guy2.png"> <!--insert guy2's photo and details-->
-          <h3>Person 2</h3>
-          <p>His/Her position</p>
-        </div>
-
-        <div class="box">
-          <img src="./img/guy3.png"> <!--insert guy3's photo and details-->
-          <h3>Person 3</h3>
-          <p>His/Her position</p>
-        </div>
-
-        <div class="box">
-          <img src="./img/guy4.png"> <!--insert guy4's photo and details-->
-          <h3>Person 4</h3>
-          <p>His/Her position</p>
-        </div>
-      </section>
     </div>
+  </header>
 
-    <!--Footer-->
-    <footer>
-      <div id="normfooter">
+  <!--showcase-->
+  <section id="showcase">
+    <div class="container">
+      <h1>Who are we? And why we exist?</h1>
+      <p>The Human Resource Department of Politeknik Brunei manage people with the right resources as efficient as possible. The main aim of the Human Resource Department is  to effectively and systematically manage human resource development in facilitating quality education. Politeknik Brunei has a population of 116 officers and staffs, which comprises of 56 administration staffs and 60 lecturers. Politeknik Brunei regards eacg officers and staff as valuable asset towards achieving its vision and mission as well as its five years strategic plans.</p>
+    </div>
+  </section>
+
+  <section id="email">
+    <div class="container">
+      <h1>Applying here? Email us!</h1>
+      <form>
+        <input type="email" placeholder="Insert email">
+        <button type="button" class="button_1">Email!</button>
+      </form>
+    </div>
+  </section>
+
+  <!--Box-->
+  <div class="container">
+    <h1 id="ourstaff">Our Staff</h1>
+    <section id="boxes">
+      <div class="box">
+        <img src="./img/guy1.png"> <!--insert guy1's photo and details-->
+        <h3>Person 1</h3>
+        <p>His/Her position</p>
+      </div>
+
+      <div class="box">
+        <img src="./img/guy2.png"> <!--insert guy2's photo and details-->
+        <h3>Person 2</h3>
+        <p>His/Her position</p>
+      </div>
+
+      <div class="box">
+        <img src="./img/guy3.png"> <!--insert guy3's photo and details-->
+        <h3>Person 3</h3>
+        <p>His/Her position</p>
+      </div>
+
+      <div class="box">
+        <img src="./img/guy4.png"> <!--insert guy4's photo and details-->
+        <h3>Person 4</h3>
+        <p>His/Her position</p>
+      </div>
+    </section>
+  </div>
+
+  <!--Footer-->
+  <footer>
+    <div id="normfooter">
       <div id="school">
         <h3>Our Schools</h3>
         <li><a href="">School of Business</a></li>
@@ -101,17 +110,19 @@
       <div id="hotline">
         <h3>Hotlines</h3>
         <td><p>Ambulance: 991</p>
-        <p>Police: 993</p>
-        <p>Fire and Rescue: 995</p>
-        <p>Search and Rescue: 998</p>
-        <p>Talian Darussalam: 123</p>
-      </div>
+          <p>Police: 993</p>
+          <p>Fire and Rescue: 995</p>
+          <p>Search and Rescue: 998</p>
+          <p>Talian Darussalam: 123</p>
+        </div>
       </div>
 
       <div id="truefooter">
         <p>&copy; 2020 Politeknik Brunei. All Rights Reserved</p>
+      </div>
+      <div id="buttonUp">
         <li><a href="#logo">Go up?</a></li>
       </div>
     </footer>
   </body>
-</html>
+  </html>
