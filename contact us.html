@@ -14,7 +14,7 @@
     min-height: 245px;
   }
   body #showcase{
-    min-height: 600px;
+    min-height: 800px;
     background: url("img/contact-us-background.jpg") no-repeat 0;
     background-size: 100% 100%;
     color: black;
@@ -26,6 +26,31 @@
   }
   #showcase h3{
     margin-top: 50px;
+  }
+  #contact{
+    color: #ffffff;
+    background: #1e90ff;
+    border-top: #0066cc 5px solid;
+    border-bottom: #0066cc 5px solid;
+  }
+  #contact .container{
+    margin: 20px 10% 20px 10%;
+    padding: 0 0 30px 10%;
+    background: #0066cc;
+    border-radius: 20px;
+  }
+  .input{
+    padding-bottom: 10px;
+  }
+  #contact input[type="email"]{
+    margin-left: 32px;
+  }
+  #contact input[type="submit"]{
+    margin-left: 500px;
+  }
+  #timetable table{
+    text-align: center;
+    background-color: #D3D3D3;
   }
   </style>
 </head>
@@ -58,26 +83,94 @@
   <!--showcase-->
   <section id="showcase">
     <div class="container">
-      <h1>Contact us!</h1>
+      <h1>This is our office:</h1>
       <div>
+        <!--Add the address here-->
         <p>Human Resource Department</p>
         <p>Politeknik Brunei</p>
-        <p>Block 2E Level 11</p>
-        <p>Ong Sum Ping Condominium</p>
-        <p>Jalan Ong Sum Ping</p>
+        <p>Block <span style="color:red;">[Insert No.]</span> Level <span style="color:red;">[Insert No.]</span></p>
+        <p><span style="color:red;">[Insert location]</span></p>
+        <p><span style="color:red;">[Insert road address]</span></p>
         <p>Bandar Seri Begawan</p>
         <p>Negara Brunei Darussalam</p>
       </div>
-      <h3>Office: +6732234466</h3>
+      <h4>Office: <span style="color:red;">[Insert phone number]</span></h4>
+      <div id="timetable">
+        <h3>Office Time: </h3>
+        <table border="3">
+          <tr> <!--First Row-->
+            <th>Days\Time</th> <!--First Column-->
+            <th>8.00AM - 12.00pm</th> <!--Second Column-->
+            <th>12.00PM-1.00PM</th>
+            <th>1.00PM-4.00PM</th>
+          </tr>
+          <tr> <!--Second Row-->
+            <td>Monday</td>
+            <td rowspan="4">Open</td>
+            <td rowspan="4">Break</td>
+            <td rowspan="4">Open</td>
+          </tr>
+          <tr> <!--Third Row-->
+            <td>Tuesday</td>
+          </tr>
+          <tr> <!--Fourth Row-->
+            <td>Wednesday</td>
+          </tr>
+          <tr> <!--Fifth Row-->
+            <td>Thursday</td>
+          </tr>
+          <tr> <!--Sixth Row-->
+            <td>Friday</td>
+            <td colspan="3">close</td>
+          </tr>
+          <tr> <!--Seventh Row-->
+            <td>Saturday</td>
+            <td>Open</td>
+            <td>Break</td>
+            <td>Open</td>
+          </tr>
+          <tr> <!--Eighth Row-->
+            <td>Sunday</td>
+            <td colspan="3">close</td>
+          </tr>
+        </table>
+      </div>
     </div>
   </section>
 
-  <section id="email">
+
+  <section id="contact">
     <div class="container">
       <h1>Applying here? Email us!</h1>
-      <form>
-        <input type="email" placeholder="Insert email">
-        <button type="button" class="button_1">Email!</button>
+      <form action="">
+        <div class="input">
+          <label for="username">Username: </label><input type="text"/ placeholder="Enter a Username">
+          <br/>
+        </div>
+        <div class="input">
+          <label for="email">Email: </label><input type="email" placeholder="Insert here" pattern="[a-z0-9-._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+          <br>
+        </div>
+        <div class="input">
+          <label for="question">Got a question?</label><br>
+          <textarea name="question" rows="5" cols="50">
+          </textarea>
+          <br/>
+        </div>
+        <div class="input">
+          <label for="where">Which region you are from? </label>
+          <select>
+            <option>Brunei Muara</option>
+            <option>Tutong</option>
+            <option>Belait</option>
+            <option>Temburong</option>
+            <option>Other</option>
+          </select>
+          <br>
+        </div>
+        <div class="input">
+          <input type="submit">
+        </div>
       </form>
     </div>
   </section>
@@ -104,10 +197,13 @@
       </div>
 
       <div id="truefooter">
-        <p>&copy; 2020 Politeknik Brunei. All Rights Reserved</p>
+        <p>&copy; 2020 organisation Brunei. All Rights Reserved</p>
       </div>
-      <div id="buttonUp">
-        <li><a href="#logo">Go up?</a></li>
+      <div>
+        <img src="img/arrow.png" alt="arrow" height="50px" width="80px" id="arrow">
+        <div id="buttonUp">
+          <li><a href="#logo">Go up?</a></li>
+        </div>
       </div>
     </footer>
   </body>
