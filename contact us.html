@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+  <!-- I am using Bootstrap as my framework/backbone for this Human Resource Website, since i now know how to use it abit-->
+  <!--====== Basic Meta and Details of the website =====-->
   <meta charset="utf-8">
-  <meta name="viewplatform" content="width=device-width">
   <meta name="description" content="A static responsive website for Politeknik Human Resource Department">
   <meta name="author" content="Sharifuddin Sablee">
-  <title>Politeknik Human-Resource Department | Contact Us</title>
+  <title>Politeknik Human-Resource Department | Contact</title>
+  <!-- =====This is to scale the screen to mobile size===== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicons -->
+  <link href=" " rel="icon">
+  <link href=" " rel="apple-touch-icon">
+  <!-- =====Bootstrap CSS file and other supportive file===== -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- =====Local CSS file===== -->
   <link rel="stylesheet" href="./css/style.css">
+  <!-- =====Style for this HTML only===== -->
   <style>
-  header {
-    background: url("img/contact us.jpg") no-repeat 0 ;
-    background-size: 100% auto;
-    min-height: 245px;
-  }
   body #showcase{
     min-height: 800px;
     background: url("img/contact-us-background.jpg") no-repeat 0;
@@ -21,64 +32,38 @@
     text-align: left;
     padding-left: 100px;
   }
-  #showcase p{
-    line-height: 0.4;
-  }
-  #showcase h3{
-    margin-top: 50px;
-  }
-  #contact{
-    color: #ffffff;
-    background: #1e90ff;
-    border-top: #0066cc 5px solid;
-    border-bottom: #0066cc 5px solid;
-  }
-  #contact .container{
-    margin: 20px 10% 20px 10%;
-    padding: 0 0 30px 5%;
-    background: #0066cc;
-    border-radius: 20px;
-  }
-  .input{
-    padding-bottom: 10px;
-  }
-  #contact input[type="email"]{
-    margin-left: 32px;
-  }
-  #contact input[type="submit"]{
-    margin-left: 500px;
-  }
-  #timetable table{
-    text-align: center;
-    background-color: #D3D3D3;
-  }
+
   </style>
 </head>
 
+<!-- ====== Main Body content ======= -->
 <body>
-  <!--Header-->
-  <header>
-    <div class="container">
-
-      <div id="logo">
-        <a href="index.html"><img src="./img/pblogo1.png" height="100px" width="135px" align="left" alt="Politeknik Brunei"></a>
-        <h1>Human Resource Department</h1>
-      </div>
-      <div id="topRight">
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="our role.html">Our Role</a></li>
-            <li class="current"><a href="contact us.html">Contact Us</a></li>
-          </ul>
-        </nav>
-        <form>
-          <input type="search" placeholder="Looking for something?">
-          <button type="button" class="button_1">Search!</button>
-        </form>
-      </div>
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+    <div class="container text-right">
+      <i class="icofont-phone"></i> +673 123 4567
+      <i class="icofont-clock-time icofont-rotate-180"></i> Everyday except Fri: 10:00 - 13.00
     </div>
-  </header>
+  </section>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo mr-auto">
+        <h1 class="text-light "><a href="index.html"><span>Human Resource Department</span></a></h1>
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="our role.html">Our Role</a></li>
+          <li class="current"><a href="contact us.html">Contact Us</a></li>
+
+          <li class="order-now text-center"><a href="contact us.html#form">Email Us!</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
 
   <!--showcase-->
   <section id="showcase">
@@ -138,8 +123,80 @@
     </div>
   </section>
 
+  <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
 
-  <section id="contact">
+        <div class="section-title">
+          <h2><span>Contact</span> Us</h2>
+          <p>If you have any questions, please contact us via Email or visit our headquarters.</p>
+        </div>
+      </div>
+
+      <!--<div class="map"> I dont know how this map is not working...
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/place/4%C2%B053'17.5%22N+114%C2%B056'31.1%22E/@4.8882083,114.9397943,17z/data=!3m1!4b1!4m14!1m7!3m6!1s0x3222f5b0540b731f:0xeeacf8c47cbae84b!2sBandar+Seri+Begawan!3b1!8m2!3d4.9030522!4d114.939821!3m5!1s0x0:0x0!7e2!8m2!3d4.8882031!4d114.9419829" frameborder="0" allowfullscreen></iframe>
+      </div>-->
+
+      <div class="container mt-5">
+
+        <div class="info-wrap">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 info">
+              <i class="icofont-google-map"></i>
+              <h4>Location:</h4>
+              <p>Bandar Seri Begawan <br>Brunei Darussalam</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="icofont-clock-time icofont-rotate-90"></i>
+              <h4>Open Hours:</h4>
+              <p>Monday-Saturday except Friday:<br>11:00 AM - 11:00 PM</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="icofont-envelope"></i>
+              <h4>Email:</h4>
+              <p>ExpressCuisine@gmail.com</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="icofont-phone"></i>
+              <h4>Call:</h4>
+              <p>+673 123 4567<br>+673 234 5678</p>
+            </div>
+          </div>
+        </div>
+
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="form-row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-6 form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+            <div class="validate"></div>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="mb-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
+
+      </div>
+    </section><!-- End Contact Section -->
+  <!--<section id="contact">
     <div class="container">
       <h1>Applying here? Email us!</h1>
       <form action="">
@@ -173,38 +230,57 @@
         </div>
       </form>
     </div>
-  </section>
+  </section>-->
 
-  <!--Footer-->
-  <footer>
-    <div id="normfooter">
-      <div id="school">
-        <h3>Our Schools</h3>
-        <li><a href="">School of Business</a></li>
-        <li><a href="">School of Health Sciences</a></li>
-        <li><a href="">School of Information and Communication Technology</a></li>
-        <li><a href="">School of Science and Engineering</a></li>
-      </div>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
 
-      <div id="hotline">
-        <h3>Hotlines</h3>
-        <td><p>Ambulance: 991</p>
-          <p>Police: 993</p>
-          <p>Fire and Rescue: 995</p>
-          <p>Search and Rescue: 998</p>
-          <p>Talian Darussalam: 123</p>
+      <div class="row">
+        <div class="col-lg-6 justify-content-center align-items-stretch">
+          <div id="school">
+            <h3>Our Schools</h3>
+            <li><a href="">School of Business</a></li>
+            <li><a href="">School of Health Sciences</a></li>
+            <li><a href="">School of Information and Communication Technology</a></li>
+            <li><a href="">School of Science and Engineering</a></li>
+          </div>
+        </div>
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-stretch">
+          <div id="hotline">
+            <h3>Hotlines</h3>
+            <li>Ambulance: 991</li>
+            <li>Police: 993</li>
+            <li>Fire and Rescue: 995</li>
+            <li>Search and Rescue: 998</li>
+            <li>Talian Darussalam: 123</li>
+          </div>
         </div>
       </div>
 
-      <div id="truefooter">
-        <p>&copy; 2020 Politeknik Brunei. All Rights Reserved</p>
-      </div>
-      <div>
-        <img src="img/arrow.png" alt="arrow" height="50px" width="80px" id="arrow">
-        <div id="buttonUp">
-          <li><a href="#logo">Go up?</a></li>
-        </div>
-      </div>
-    </footer>
-  </body>
-  </html>
+    </div>
+    <div class="copyright">
+      &copy; 2020 <strong><span>Politeknik Brunei</span></strong>. All Rights Reserved
+    </div>
+  </div>
+</footer><!-- End Footer -->
+
+<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+<!--jQuery, Popper.js, and Bootstrap JavaScript-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/venobox/venobox.min.js"></script>
+<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>

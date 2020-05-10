@@ -1,130 +1,266 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+  <!-- I am using Bootstrap as my framework/backbone for this Human Resource Website, since i now know how to use it abit-->
+  <!--====== Basic Meta and Details of the website =====-->
   <meta charset="utf-8">
-  <meta name="viewplatform" content="width=device-width">
   <meta name="description" content="A static responsive website for Politeknik Human Resource Department">
   <meta name="author" content="Sharifuddin Sablee">
   <title>Politeknik Human-Resource Department | Welcome</title>
+  <!-- =====This is to scale the screen to mobile size===== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicons -->
+  <link href=" " rel="icon">
+  <link href=" " rel="apple-touch-icon">
+  <!-- =====Bootstrap CSS file and other supportive file===== -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- =====Local CSS file===== -->
   <link rel="stylesheet" href="./css/style.css">
+  <!-- =====Style for this HTML only===== -->
   <style>
-  header {
-    background: url("img/human resource.jpg") no-repeat 0 ;
-    background-size: 100% auto;
-    background-color: #B0E0E6;
-    min-height: 245px;
-  }
-  body #showcase{
-    min-height: 800px;
-    background: url("img/poli-building.jpg") no-repeat 0;
-    background-size: 100% 100%;
-  }
+
   </style>
 </head>
 
+<!-- ====== Main Body content ======= -->
 <body>
-  <!--Header-->
-  <header>
-    <div class="container">
-
-      <div id="logo">
-        <a href="index.html"><img src="./img/pblogo1.png" height="100px" width="135px" align="left" alt="Politeknik Brunei"></a>
-        <h1>Human Resource Department</h1>
-      </div>
-      <div id="topRight">
-        <nav>
-          <ul>
-            <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="our role.html">Our Role</a></li>
-            <li><a href="contact us.html">Contact Us</a></li>
-          </ul>
-        </nav>
-        <form>
-          <input type="search" placeholder="Looking for something?">
-          <button type="button" class="button_1">Search!</button>
-        </form>
-      </div>
-
-    </div>
-  </header>
-
-  <!--showcase-->
-  <section id="showcase">
-    <div class="container">
-      <h1>Who are we? And why we exist?</h1>
-      <p>The Human Resource Department of Politeknik Brunei handles management and development of employees in an organisation as effectively as possible. The main mission of the Human Resource Department is to increase the work performance of employees and students alike of Politeknik while maintaining their good health condition and work environment quality. Politeknik Brunei has a population of <span style="color:red;">[Insert No.]</span> officers and staffs, which comprises of <span style="color:red;">[Insert No.]</span> administration staffs and <span style="color:red;">[Insert No.]</span> lecturers. Politeknik Brunei regards every member in the polytechnic college as valuable assets in achieving its ultimate mission.</p>
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+    <div class="container text-right">
+      <i class="icofont-phone"></i> +673 123 4567
+      <i class="icofont-clock-time icofont-rotate-180"></i> Everyday except Fri: 10:00 - 13.00
     </div>
   </section>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
 
-  <section id="email">
-    <div class="container">
-      <h1>Applying here? Email us!</h1>
-      <form action="contact us.html" method="post">
-        <button type="submit" class="button_1">Go there!</button>
-      </form>
+      <div class="logo mr-auto">
+        <h1 class="text-light "><a href="index.html"><span>Human Resource Department</span></a></h1>
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="current"><a href="index.html">Home</a></li>
+          <li><a href="our role.html">Our Role</a></li>
+          <li><a href="contact us.html">Contact Us</a></li>
+
+          <li class="order-now text-center"><a href="contact us.html#form">Email Us!</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
     </div>
-  </section>
+  </header><!-- End Header -->
 
-  <!--Box-->
-  <div class="container">
-    <h1 id="ourstaff">Our Staff</h1>
-    <section id="boxes">
-      <div class="box">
-        <img src="./img/guy1.png"> <!--insert guy1's photo and details-->
-        <h3>Person 1</h3>
-        <p>His/Her position</p>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+        <div class="carousel-inner" role="listbox"> <!-- start slide -->
+
+          <!-- If i got more content, ill just add more slides here...by Sharif -->
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background: url('img/poli-building.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animated fadeInDown">What does our <span>Human Resource Department</span> do?</h2>
+                <h5 class="animated fadeInUp">The Human Resource Department of Politeknik Brunei manage management and development of employees in Politeknik Brunei as effectively as possible. Assigning each employees to their suitable post and maintaining their good health condition and work enviroment.</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background: url('img/Jln-Ong-Sum-Ping.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animated fadeInDown">We handle <span>Employees Management</span> find their suitable ideal job here!!</h2>
+                <p class="animated fadeInUp">Having trouble getting a job in Politeknik? or not having the minimum skills to for the job? We can help you with your inquiry!</p>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- end slide -->
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+    <div class="container-fluid">
+
+      <div class="row">
+
+        <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("img/human resource.jpg");'>
+          <a href="https://www.youtube.com/watch?v=8ciAnHfIiFA" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+        </div>
+
+        <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+          <div class="content">
+            <h3>How does our <strong>Human Resource Department</strong> works?</h3>
+            <p class="font-italic">
+              Human Resource Department is designed to manage people in Politeknik Brunei. Human resource management is like a cogwheel, requiring the teamwork of everyone to keep Politeknik Brunei function as an educational institution.
+            </p>
+            <h5>How does it related with work?</h5>
+            <p>
+              This Department ensure the organization to connects mission with the work of employees. Thus, synchronizing the work flow of Politeknik Brunei.
+            </p>
+            <h5>Is it safe?</h5>
+            <p>
+              Human Resource Department will always ensure the safety, health and welfare of employee at work. As having a good health condition of an employee is more beneficial and productive.
+            </p>
+            <ul>
+              <li><i class="bx bx-check-double"></i> Managing human resource as effectively as possible.</li>
+              <li><i class="bx bx-check-double"></i> Sustaining Politeknik Brunei with reliable employees every year.</li>
+              <li><i class="bx bx-check-double"></i> Ensures the employee to have the best possible working enviroment in Politeknik Brunei.</li>
+            </ul>
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="box">
-        <img src="./img/guy2.png"> <!--insert guy2's photo and details-->
-        <h3>Person 2</h3>
-        <p>His/Her position</p>
+    </div>
+  </section><!-- End About Section -->
+
+  <!-- ======= go-email Section ======= -->
+  <section id="go-email" class="go-email">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10">
+          <h1>Applying here? Email us!</h1>
+        </div>
+        <div class="col-sm-2">
+          <form action="contact us.html" method="post">
+            <button type="submit" class="button_1">Go there!</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section> <!-- End go-email section -->
+
+  <!-- ======= Staffs Section ======= -->
+  <section id="staffs" class="staffs">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Our Staff</h2>
       </div>
 
-      <div class="box">
-        <img src="./img/guy3.png"> <!--insert guy3's photo and details-->
-        <h3>Person 3</h3>
-        <p>His/Her position</p>
+      <div class="row">
+
+        <div class="col-lg-3"> <!-- Person 1 -->
+          <div class="member">
+            <div class="pic"><img src="img/Person1.jpg" class="img-fluid" alt="Person 1"></div>
+            <div class="member-info">
+              <h4>Laila binti Johari</h4>
+              <span>Position:<br>Acting Head of Department<br>Human Resource Department</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3"> <!-- Person 2 -->
+          <div class="member">
+            <div class="pic"><img src="img/Person2.jpg" class="img-fluid" alt="Person 2"></div>
+            <div class="member-info">
+              <h4>Ak. Mohammad Zulkhairin bin Pg. Hj Yusof</h4>
+              <span>Department:<br>Human Resource Department</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3"> <!-- Person 3 -->
+          <div class="member">
+            <div class="pic"><img src="img/Person3.jpg" class="img-fluid" alt="Person 3"></div>
+            <div class="member-info">
+              <h4>Masdiana binti Haji Masri</h4>
+              <span>Department:<br>Human Resource Department</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3"> <!-- Person 4 -->
+          <div class="member">
+            <div class="pic"><img src="img/Person4.jpg" class="img-fluid" alt="Person 3"></div>
+            <div class="member-info">
+              <h4>Nur Asyiqin Rabiatutadawiyah binti Haji Syafien</h4>
+              <span>Department:<br>Human Resource Department</span>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <div class="box">
-        <img src="./img/guy4.png"> <!--insert guy4's photo and details-->
-        <h3>Person 4</h3>
-        <p>His/Her position</p>
+    </div>
+  </section><!-- End Staffs Section -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-6 justify-content-center align-items-stretch">
+          <div id="school">
+            <h3>Our Schools</h3>
+            <li><a href="">School of Business</a></li>
+            <li><a href="">School of Health Sciences</a></li>
+            <li><a href="">School of Information and Communication Technology</a></li>
+            <li><a href="">School of Science and Engineering</a></li>
+          </div>
+        </div>
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-stretch">
+          <div id="hotline">
+            <h3>Hotlines</h3>
+            <li>Ambulance: 991</li>
+            <li>Police: 993</li>
+            <li>Fire and Rescue: 995</li>
+            <li>Search and Rescue: 998</li>
+            <li>Talian Darussalam: 123</li>
+          </div>
+        </div>
       </div>
-    </section>
+
+    </div>
+    <div class="copyright">
+      &copy; 2020 <strong><span>Politeknik Brunei</span></strong>. All Rights Reserved
+    </div>
   </div>
+</footer><!-- End Footer -->
 
-  <!--Footer-->
-  <footer>
-    <div id="normfooter">
-      <div id="school">
-        <h3>Our Schools</h3>
-        <li><a href="">School of Business</a></li>
-        <li><a href="">School of Health Sciences</a></li>
-        <li><a href="">School of Information and Communication Technology</a></li>
-        <li><a href="">School of Science and Engineering</a></li>
-      </div>
+<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
-      <div id="hotline">
-        <h3>Hotlines</h3>
-        <td><p>Ambulance: 991</p>
-          <p>Police: 993</p>
-          <p>Fire and Rescue: 995</p>
-          <p>Search and Rescue: 998</p>
-          <p>Talian Darussalam: 123</p>
-        </div>
-      </div>
+<!--jQuery, Popper.js, and Bootstrap JavaScript-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/venobox/venobox.min.js"></script>
+<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
 
-      <div id="truefooter">
-        <p>&copy; 2020 Politeknik Brunei. All Rights Reserved</p>
-      </div>
-      <div>
-        <img src="img/arrow.png" alt="arrow" height="50px" width="80px" id="arrow">
-        <div id="buttonUp">
-          <li><a href="#logo">Go up?</a></li>
-        </div>
-      </div>
-    </footer>
-  </body>
-  </html>
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>
