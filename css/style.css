@@ -927,16 +927,16 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Email-us
+# contact-us
 --------------------------------------------------------------*/
-.go-email {
+.go-contact {
   position: relative;
   color: #fff !important;
   border-top: steelblue 7px solid;
   border-bottom: steelblue 7px solid;
 }
 
-.go-email::before {
+.go-contact::before {
   content: '';
   background-color: rgba(12, 11, 10, 0.8);
   position: absolute;
@@ -945,11 +945,11 @@ section {
   left: 0;
   bottom: 0;
 }
-.go-email .container {
+.go-contact .container {
   position: relative;
 }
 
-.go-email form {
+.go-contact form {
   float: right;
   padding-top: 10px
 }

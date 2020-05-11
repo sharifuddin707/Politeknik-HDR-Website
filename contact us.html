@@ -6,10 +6,10 @@
   <meta charset="utf-8">
   <meta name="description" content="A static responsive website for Politeknik Human Resource Department">
   <meta name="author" content="Sharifuddin Sablee">
-  <title>Politeknik Human-Resource Department | Contact</title>
+  <title>Politeknik Human-Resource Department | Contact Us</title>
   <!-- =====This is to scale the screen to mobile size===== -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Favicons -->
+  <!-- ==== Favicons ==== -->
   <link href=" " rel="icon">
   <link href=" " rel="apple-touch-icon">
   <!-- =====Bootstrap CSS file and other supportive file===== -->
@@ -27,12 +27,34 @@
   body #showcase{
     min-height: 800px;
     background: url("img/contact-us-background.jpg") no-repeat 0;
-    background-size: 100% 100%;
+    background-size: auto 100%;
     color: black;
     text-align: left;
-    padding-left: 100px;
   }
-
+  #showcase .container{
+    margin: 50px 0 0 100px;
+  }
+  #contact .info-wrap{
+    background: #fff;
+  }
+  #contact .section-title{
+    background: rgba(26, 24, 22, 0.85);
+    padding: 20px;
+    color: #fff;
+  }
+  #timetable{
+    text-align: center;
+    background: rgba(26, 24, 22, 0.85);
+    padding: 20px;
+  }
+  #timetable h3{
+    color: steelblue;
+  }
+  #timetable .center {
+    margin-left:auto;
+    margin-right:auto;
+    background: #fff;
+  }
   </style>
 </head>
 
@@ -59,107 +81,41 @@
           <li><a href="our role.html">Our Role</a></li>
           <li class="current"><a href="contact us.html">Contact Us</a></li>
 
-          <li class="order-now text-center"><a href="contact us.html#form">Email Us!</a></li>
+          <li class="order-now text-center"><a href="contact us.html#contact">Contact Us!</a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
   </header><!-- End Header -->
 
-  <!--showcase-->
+  <!-- ===== Showcase =====-->
   <section id="showcase">
-    <div class="container">
-      <h1>This is our office:</h1>
-      <div>
-        <!--Add the address here-->
-        <p>Human Resource Department</p>
-        <p>Politeknik Brunei</p>
-        <p>Block <span style="color:red;">[Insert No.]</span> Level <span style="color:red;">[Insert No.]</span></p>
-        <p><span style="color:red;">[Insert location]</span></p>
-        <p><span style="color:red;">[Insert road address]</span></p>
-        <p>Bandar Seri Begawan</p>
-        <p>Negara Brunei Darussalam</p>
-      </div>
-      <h4>Office: <span style="color:red;">[Insert phone number]</span></h4>
-      <div id="timetable">
-        <h3>Office Time: </h3>
-        <table border="3">
-          <tr> <!--First Row-->
-            <th>Days\Time</th> <!--First Column-->
-            <th>8.00AM - 12.00pm</th> <!--Second Column-->
-            <th>12.00PM-1.00PM</th>
-            <th>1.00PM-4.00PM</th>
-          </tr>
-          <tr> <!--Second Row-->
-            <td>Monday</td>
-            <td rowspan="4">Open</td>
-            <td rowspan="4">Break</td>
-            <td rowspan="4">Open</td>
-          </tr>
-          <tr> <!--Third Row-->
-            <td>Tuesday</td>
-          </tr>
-          <tr> <!--Fourth Row-->
-            <td>Wednesday</td>
-          </tr>
-          <tr> <!--Fifth Row-->
-            <td>Thursday</td>
-          </tr>
-          <tr> <!--Sixth Row-->
-            <td>Friday</td>
-            <td colspan="3">close</td>
-          </tr>
-          <tr> <!--Seventh Row-->
-            <td>Saturday</td>
-            <td>Open</td>
-            <td>Break</td>
-            <td>Open</td>
-          </tr>
-          <tr> <!--Eighth Row-->
-            <td>Sunday</td>
-            <td colspan="3">close</td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= Contact Section ======= -->
+    <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
 
         <div class="section-title">
-          <h2><span>Contact</span> Us</h2>
-          <p>If you have any questions, please contact us via Email or visit our headquarters.</p>
+          <h2><span>Contact Us</span></h2>
+          <p>If you have any questions, please contact us via message/Email or visit our headquarters.</p>
         </div>
       </div>
-
-      <!--<div class="map"> I dont know how this map is not working...
-        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/place/4%C2%B053'17.5%22N+114%C2%B056'31.1%22E/@4.8882083,114.9397943,17z/data=!3m1!4b1!4m14!1m7!3m6!1s0x3222f5b0540b731f:0xeeacf8c47cbae84b!2sBandar+Seri+Begawan!3b1!8m2!3d4.9030522!4d114.939821!3m5!1s0x0:0x0!7e2!8m2!3d4.8882031!4d114.9419829" frameborder="0" allowfullscreen></iframe>
-      </div>-->
 
       <div class="container mt-5">
 
         <div class="info-wrap">
           <div class="row">
-            <div class="col-lg-3 col-md-6 info">
+            <div class="col-lg-4 col-md-6 info">
               <i class="icofont-google-map"></i>
               <h4>Location:</h4>
-              <p>Bandar Seri Begawan <br>Brunei Darussalam</p>
+              <p>Human Resource Department<br>Politeknik Brunei<br>Block 2E Level 11<br>Ong Sum Ping Condominium<br>Jalan Ong Sum Ping<br>Bandar Seri Begawan BA1311<br>Negara Brunei Darussalam</p>
             </div>
 
-            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
-              <i class="icofont-clock-time icofont-rotate-90"></i>
-              <h4>Open Hours:</h4>
-              <p>Monday-Saturday except Friday:<br>11:00 AM - 11:00 PM</p>
-            </div>
-
-            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+            <div class="col-lg-4 col-md-6 info mt-4 mt-lg-0">
               <i class="icofont-envelope"></i>
               <h4>Email:</h4>
               <p>ExpressCuisine@gmail.com</p>
             </div>
 
-            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+            <div class="col-lg-4 col-md-6 info mt-4 mt-lg-0">
               <i class="icofont-phone"></i>
               <h4>Call:</h4>
               <p>+673 123 4567<br>+673 234 5678</p>
@@ -178,9 +134,22 @@
               <div class="validate"></div>
             </div>
           </div>
-          <div class="form-group">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-            <div class="validate"></div>
+          <div class="form-row">
+            <div class="col-md-6 form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-6 form-group">
+              <select class="form-control">
+                <option>Brunei Muara</option>
+                <option>Tutong</option>
+                <option>Belait</option>
+                <option>Temburong</option>
+                <option>Other</option>
+              </select>
+              <div class="validate"></div>
+            <br>
+            </div>
           </div>
           <div class="form-group">
             <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
@@ -195,74 +164,84 @@
         </form>
 
       </div>
-    </section><!-- End Contact Section -->
-  <!--<section id="contact">
-    <div class="container">
-      <h1>Applying here? Email us!</h1>
-      <form action="">
-        <div class="input">
-          <label for="username">Username: </label><input type="text"/ placeholder="Enter a Username">
-          <br/>
-        </div>
-        <div class="input">
-          <label for="email">Email: </label><input type="email" placeholder="Insert here" pattern="[a-z0-9-._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-          <br>
-        </div>
-        <div class="input">
-          <label for="question">Got a question?</label><br>
-          <textarea name="question" rows="5" cols="50">
-          </textarea>
-          <br/>
-        </div>
-        <div class="input">
-          <label for="where">Which region you are from? </label>
-          <select>
-            <option>Brunei Muara</option>
-            <option>Tutong</option>
-            <option>Belait</option>
-            <option>Temburong</option>
-            <option>Other</option>
-          </select>
-          <br>
-        </div>
-        <div class="input">
-          <input type="submit">
-        </div>
-      </form>
-    </div>
-  </section>-->
+    </section>  <!-- End Contact Section -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
     <div class="container">
+    <div id="timetable"> <!-- ===== Timetable ====== -->
+      <h3>Office Time: </h3>
+      <table border="3" class="center">
+        <tr> <!--First Row-->
+          <th>Days\Time</th> <!--First Column-->
+          <th>8.00AM - 12.00pm</th> <!--Second Column-->
+          <th>12.00PM-1.00PM</th>
+          <th>1.00PM-4.00PM</th>
+        </tr>
+        <tr> <!--Second Row-->
+          <td>Monday</td>
+          <td rowspan="4">Open</td>
+          <td rowspan="4">Break</td>
+          <td rowspan="4">Open</td>
+        </tr>
+        <tr> <!--Third Row-->
+          <td>Tuesday</td>
+        </tr>
+        <tr> <!--Fourth Row-->
+          <td>Wednesday</td>
+        </tr>
+        <tr> <!--Fifth Row-->
+          <td>Thursday</td>
+        </tr>
+        <tr> <!--Sixth Row-->
+          <td>Friday</td>
+          <td colspan="3">close</td>
+        </tr>
+        <tr> <!--Seventh Row-->
+          <td>Saturday</td>
+          <td>Open</td>
+          <td>Break</td>
+          <td>Open</td>
+        </tr>
+        <tr> <!--Eighth Row-->
+          <td>Sunday</td>
+          <td colspan="3">close</td>
+        </tr>
+      </table>
+    </div><!-- End Timetable -->
+  </div>
 
-      <div class="row">
-        <div class="col-lg-6 justify-content-center align-items-stretch">
-          <div id="school">
-            <h3>Our Schools</h3>
-            <li><a href="">School of Business</a></li>
-            <li><a href="">School of Health Sciences</a></li>
-            <li><a href="">School of Information and Communication Technology</a></li>
-            <li><a href="">School of Science and Engineering</a></li>
-          </div>
-        </div>
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-stretch">
-          <div id="hotline">
-            <h3>Hotlines</h3>
-            <li>Ambulance: 991</li>
-            <li>Police: 993</li>
-            <li>Fire and Rescue: 995</li>
-            <li>Search and Rescue: 998</li>
-            <li>Talian Darussalam: 123</li>
-          </div>
+</section> <!--===== End Showcase =====-->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-6 justify-content-center align-items-stretch">
+        <div id="school">
+          <h3>Our Schools</h3>
+          <li><a href="">School of Business</a></li>
+          <li><a href="">School of Health Sciences</a></li>
+          <li><a href="">School of Information and Communication Technology</a></li>
+          <li><a href="">School of Science and Engineering</a></li>
         </div>
       </div>
+      <div class="col-lg-6 d-flex flex-column justify-content-center align-items-stretch">
+        <div id="hotline">
+          <h3>Hotlines</h3>
+          <li>Ambulance: 991</li>
+          <li>Police: 993</li>
+          <li>Fire and Rescue: 995</li>
+          <li>Search and Rescue: 998</li>
+          <li>Talian Darussalam: 123</li>
+        </div>
+      </div>
+    </div>
 
-    </div>
-    <div class="copyright">
-      &copy; 2020 <strong><span>Politeknik Brunei</span></strong>. All Rights Reserved
-    </div>
   </div>
+  <div class="copyright">
+    &copy; 2020 <strong><span>Politeknik Brunei</span></strong>. All Rights Reserved
+  </div>
+</div>
 </footer><!-- End Footer -->
 
 <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
