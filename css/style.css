@@ -865,68 +865,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Specials
---------------------------------------------------------------*/
-.specials {
-  overflow: hidden;
-}
-
-.specials .nav-tabs {
-  border: 0;
-}
-
-.specials .nav-link {
-  border: 0;
-  padding: 12px 15px 12px 0;
-  transition: 0.3s;
-  color: #3B4339;
-  border-radius: 0;
-  border-right: 2px solid #e8e7e4;
-  font-weight: 600;
-  font-size: 15px;
-}
-
-.specials .nav-link:hover {
-  color: steelblue;
-}
-
-.specials .nav-link.active {
-  color: steelblue;
-  border-color: steelblue;
-}
-
-.specials .tab-pane.active {
-  -webkit-animation: fadeIn 0.5s ease-out;
-  animation: fadeIn 0.5s ease-out;
-}
-
-.specials .details h3 {
-  font-size: 26px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: #3B4339;
-}
-
-.specials .details p {
-  color: #777777;
-}
-
-.specials .details p:last-child {
-  margin-bottom: 0;
-}
-
-@media (max-width: 992px) {
-  .specials .nav-link {
-    border: 0;
-    padding: 15px;
-  }
-  .specials .nav-link.active {
-    color: #fff;
-    background: steelblue;
-  }
-}
-
-/*--------------------------------------------------------------
 # contact-us
 --------------------------------------------------------------*/
 .go-contact {
@@ -953,7 +891,24 @@ section {
   float: right;
   padding-top: 10px
 }
+.go-contact .col-sm-4 a {
+  background: steelblue;
+  color: #fff;
+  border-radius: 50px;
+  margin: 0 0 0 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  float: right;
+}
 
+.go-contact .col-sm-4 a:hover {
+  background: powderblue;
+  color: #fff;
+}
 
 /*--------------------------------------------------------------
 # Staffs
